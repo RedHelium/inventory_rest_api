@@ -20,7 +20,11 @@ RESTful API на Golang по получению оборудования с тр
       - name - Поиск оборудования по названию
       - id_owner - Поиск оборудования по ID владельца
       - status - Статус транзакций. Используется для фильтрации транзакций.
+![Inventory](/images/inventory.jpg)
+
+
   - `[host]:[port]/api/v1/inventory/all` - (GET-запрос) Получить список оборудования, которые есть.
+![Inventory](/images/inventory_all.jpg)
   - `[host]:[port]/api/v1/operations` - (GET-запрос) Получить Транзакции с оборудованием.
     - Параметры:
       - id_operation - Поиск транзакции по её ID
@@ -29,3 +33,7 @@ RESTful API на Golang по получению оборудования с тр
       - status - Статус транзакций. Используется дли фильтрации.
       - created_date_from, created_date_to - период, используемый для фильтрации по дате создания транзакции.
       - updated_date_from, updated_date_to - период, используемый для фильтрации по дате обновления статуса транзакции.
+![Operations](/images/operations.jpg)
+
+
+
